@@ -1,0 +1,203 @@
+{
+    "questions": [{
+            "id": 1,
+            "text": "In this group, who is the one you wish you had never met?",
+            "category": "spicy"
+        },
+        {
+            "id": 2,
+            "text": "Who here would survive the longest in a zombie apocalypse?",
+            "category": "fun"
+        },
+        {
+            "id": 3,
+            "text": "Who is most likely to become famous?",
+            "category": "fun"
+        },
+        {
+            "id": 4,
+            "text": "Who would you trust with your deepest secret?",
+            "category": "deep"
+        },
+        {
+            "id": 5,
+            "text": "Who is the worst driver in this group?",
+            "category": "fun"
+        },
+        {
+            "id": 6,
+            "text": "Who would you want by your side in a fight?",
+            "category": "fun"
+        },
+        {
+            "id": 7,
+            "text": "Who is most likely to get arrested?",
+            "category": "spicy"
+        },
+        {
+            "id": 8,
+            "text": "Who gives the best advice?",
+            "category": "deep"
+        },
+        {
+            "id": 9,
+            "text": "Who is the biggest flirt?",
+            "category": "spicy"
+        },
+        {
+            "id": 10,
+            "text": "Who would you call at 3 AM if you needed help?",
+            "category": "deep"
+        },
+        {
+            "id": 11,
+            "text": "Who is most likely to become a millionaire?",
+            "category": "fun"
+        },
+        {
+            "id": 12,
+            "text": "Who has the best fashion sense?",
+            "category": "fun"
+        },
+        {
+            "id": 13,
+            "text": "Who is the worst liar?",
+            "category": "fun"
+        },
+        {
+            "id": 14,
+            "text": "Who would you want to be stuck on a deserted island with?",
+            "category": "deep"
+        },
+        {
+            "id": 15,
+            "text": "Who is most likely to embarrass themselves in public?",
+            "category": "fun"
+        },
+        {
+            "id": 16,
+            "text": "Who has changed the most since you first met them?",
+            "category": "deep"
+        },
+        {
+            "id": 17,
+            "text": "Who is the biggest drama queen/king?",
+            "category": "spicy"
+        },
+        {
+            "id": 18,
+            "text": "Who would make the best parent?",
+            "category": "deep"
+        },
+        {
+            "id": 19,
+            "text": "Who is most likely to win a Nobel Prize?",
+            "category": "fun"
+        },
+        {
+            "id": 20,
+            "text": "Who has the most embarrassing search history?",
+            "category": "spicy"
+        },
+        {
+            "id": 21,
+            "text": "Who would you swap lives with for a day?",
+            "category": "deep"
+        },
+        {
+            "id": 22,
+            "text": "Who is the worst at keeping secrets?",
+            "category": "spicy"
+        },
+        {
+            "id": 23,
+            "text": "Who would win in an arm wrestling match against everyone else?",
+            "category": "fun"
+        },
+        {
+            "id": 24,
+            "text": "Who has the best laugh?",
+            "category": "fun"
+        },
+        {
+            "id": 25,
+            "text": "Who is most likely to cry during a movie?",
+            "category": "fun"
+        },
+        {
+            "id": 26,
+            "text": "Who would you trust to plan your wedding?",
+            "category": "deep"
+        },
+        {
+            "id": 27,
+            "text": "Who is the biggest procrastinator?",
+            "category": "fun"
+        },
+        {
+            "id": 28,
+            "text": "Who has the weirdest eating habits?",
+            "category": "fun"
+        },
+        {
+            "id": 29,
+            "text": "Who would be the best travel companion?",
+            "category": "deep"
+        },
+        {
+            "id": 30,
+            "text": "Who is most likely to start a cult?",
+            "category": "spicy"
+        },
+        {
+            "id": 31,
+            "text": "Who gives the best hugs?",
+            "category": "deep"
+        },
+        {
+            "id": 32,
+            "text": "Who is most likely to become a TikTok star?",
+            "category": "fun"
+        },
+        {
+            "id": 33,
+            "text": "Who would you want as your lawyer?",
+            "category": "fun"
+        },
+        {
+            "id": 34,
+            "text": "Who has the messiest room?",
+            "category": "fun"
+        },
+        {
+            "id": 35,
+            "text": "Who is the most competitive?",
+            "category": "fun"
+        },
+        {
+            "id": 36,
+            "text": "Who would you trust with your phone unlocked?",
+            "category": "deep"
+        },
+        {
+            "id": 37,
+            "text": "Who is most likely to sleep through an earthquake?",
+            "category": "fun"
+        },
+        {
+            "id": 38,
+            "text": "Who has the best dance moves?",
+            "category": "fun"
+        },
+        {
+            "id": 39,
+            "text": "Who would make the worst roommate?",
+            "category": "spicy"
+        },
+        {
+            "id": 40,
+            "text": "Who inspires you the most?",
+            "category": "deep"
+        }
+    ]
+}
