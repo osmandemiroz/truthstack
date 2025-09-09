@@ -11,6 +11,7 @@ dependencies:
   flutter_card_swiper: ^7.0.2
   haptic_feedback: ^0.5.1+1
 dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
   flutter_test:
     sdk: flutter
   pubspec_dependency_sorter: ^1.0.5
@@ -67,3 +68,8 @@ flutter:
       fonts:
         - asset: assets/fonts/MaShanZheng-Regular.ttf
           weight: 400
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/marketing/app_logo.png
+  remove_alpha_ios: true
