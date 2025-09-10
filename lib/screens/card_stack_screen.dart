@@ -6,6 +6,9 @@ import 'package:truthstack/models/question.dart';
 import 'package:truthstack/services/question_service.dart';
 import 'package:truthstack/widgets/question_card.dart';
 
+/// Supported in-app languages for visible UI strings on this screen
+enum Language { turkish, english }
+
 /// Main screen displaying the swipeable card stack
 /// Implements Apple's Human Interface Guidelines with smooth animations,
 /// haptic feedback, and a minimal, elegant design
@@ -22,6 +25,11 @@ class _CardStackScreenState extends State<CardStackScreen>
   List<Question> _questions = [];
   bool _isLoading = true;
   int _currentIndex = 0;
+
+  /// Language selection for in-app visible strings.
+  /// We keep it simple and self-contained here without wiring full Flutter localization yet.
+  /// Existing functionality is preserved; we only switch the few on-screen strings.
+  Language _currentLanguage = Language.turkish; // Default to Turkish
 
   /// Animation controllers for UI elements
   late AnimationController _backgroundAnimationController;
@@ -59,13 +67,131 @@ class _CardStackScreenState extends State<CardStackScreen>
     super.dispose();
   }
 
+  /// Simple translation helper for visible UI strings on this screen only.
+  /// If you expand localization later, consider extracting this into a dedicated localization layer.
+  String _tr(String key) {
+    final localized = <String, Map<Language, String>>{
+      'appTitle': {
+        Language.turkish: 'Truth Stack', // Brand stays consistent
+        Language.english: 'Truth Stack',
+      },
+      'preparing': {
+        Language.turkish: 'Sorular hazırlanıyor...',
+        Language.english: 'Preparing your questions...',
+      },
+      'noQuestions': {
+        Language.turkish: 'Soru bulunamadı',
+        Language.english: 'No questions available',
+      },
+      'instructions': {
+        Language.turkish: 'Kartları kaydırın veya dokunarak soruları görün',
+        Language.english: 'Swipe or tap cards to reveal questions',
+      },
+      'reshuffled': {
+        Language.turkish: 'Deste yeniden karıştırıldı! 🎲',
+        Language.english: 'Deck reshuffled! 🎲',
+      },
+      'ok': {
+        Language.turkish: 'Tamam',
+        Language.english: 'OK',
+      },
+      'language': {
+        Language.turkish: 'Dil',
+        Language.english: 'Language',
+      },
+      'turkish': {
+        Language.turkish: 'Türkçe',
+        Language.english: 'Turkish',
+      },
+      'english': {
+        Language.turkish: 'İngilizce',
+        Language.english: 'English',
+      },
+    };
+
+    return localized[key]?[_currentLanguage] ??
+        localized[key]?[Language.english] ??
+        key;
+  }
+
+  /// Present a language selector using an iOS-style action sheet.
+  Future<void> _showLanguageSelector() async {
+    // Debug print with function name per user guideline
+    // ignore: avoid_print
+    print('[ _showLanguageSelector ] presenting language options');
+    await showCupertinoModalPopup<void>(
+      context: context,
+      builder: (context) {
+        return CupertinoActionSheet(
+          title: Text(
+            _tr('language'),
+            style: const TextStyle(
+              fontFamily: 'Raleway',
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+              letterSpacing: 0.2,
+            ),
+          ),
+          actions: [
+            CupertinoActionSheetAction(
+              onPressed: () async {
+                Navigator.pop(context);
+                if (_currentLanguage != Language.turkish) {
+                  setState(() {
+                    _isLoading = true;
+                    _currentLanguage = Language.turkish;
+                  });
+                  // Update question service language and reload questions
+                  await QuestionService.setLanguage(QuestionLanguage.turkish);
+                  setState(() {
+                    _questions = QuestionService.getAllQuestions();
+                    _isLoading = false;
+                    _currentIndex = 0; // Reset to first question
+                  });
+                }
+              },
+              child: Text(_tr('turkish')),
+            ),
+            CupertinoActionSheetAction(
+              onPressed: () async {
+                Navigator.pop(context);
+                if (_currentLanguage != Language.english) {
+                  setState(() {
+                    _isLoading = true;
+                    _currentLanguage = Language.english;
+                  });
+                  // Update question service language and reload questions
+                  await QuestionService.setLanguage(QuestionLanguage.english);
+                  setState(() {
+                    _questions = QuestionService.getAllQuestions();
+                    _isLoading = false;
+                    _currentIndex = 0; // Reset to first question
+                  });
+                }
+              },
+              child: Text(_tr('english')),
+            ),
+          ],
+          cancelButton: CupertinoActionSheetAction(
+            isDefaultAction: true,
+            onPressed: () => Navigator.pop(context),
+            child: Text(_tr('ok')),
+          ),
+        );
+      },
+    );
+  }
+
   /// Load questions from the service
   Future<void> _loadQuestions() async {
     setState(() {
       _isLoading = true;
     });
 
-    await QuestionService.loadQuestions();
+    // Set the question service language to match our UI language
+    await QuestionService.setLanguage(_currentLanguage == Language.turkish
+        ? QuestionLanguage.turkish
+        : QuestionLanguage.english);
 
     // Get all questions and shuffle them
     final allQuestions = QuestionService.getAllQuestions();
@@ -106,7 +232,7 @@ class _CardStackScreenState extends State<CardStackScreen>
     });
 
     // Show a subtle notification
-    _showNotification('Deck reshuffled! 🎲');
+    _showNotification(_tr('reshuffled'));
   }
 
   /// Show a subtle notification using iOS-style presentation
@@ -126,7 +252,7 @@ class _CardStackScreenState extends State<CardStackScreen>
         ),
         actions: [
           CupertinoDialogAction(
-            child: const Text('OK'),
+            child: Text(_tr('ok')),
             onPressed: () => Navigator.pop(context),
           ),
         ],
@@ -208,6 +334,15 @@ class _CardStackScreenState extends State<CardStackScreen>
               size: 28,
             ),
           ),
+          // Language selector button using a globe icon
+          IconButton(
+            onPressed: _showLanguageSelector,
+            icon: Icon(
+              CupertinoIcons.globe,
+              color: Colors.white.withValues(alpha: 0.9),
+              size: 26,
+            ),
+          ),
           const SizedBox(width: 8),
         ],
       ),
@@ -283,7 +418,7 @@ class _CardStackScreenState extends State<CardStackScreen>
           ),
           const SizedBox(height: 20),
           Text(
-            'Preparing your questions...',
+            _tr('preparing'),
             style: TextStyle(
               fontFamily: 'Raleway',
               fontSize: 16,
@@ -302,7 +437,7 @@ class _CardStackScreenState extends State<CardStackScreen>
     if (_questions.isEmpty) {
       return Center(
         child: Text(
-          'No questions available',
+          _tr('noQuestions'),
           style: TextStyle(
             fontFamily: 'Raleway',
             fontSize: 18,
@@ -322,7 +457,7 @@ class _CardStackScreenState extends State<CardStackScreen>
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
             child: Text(
-              'Swipe or tap cards to reveal questions',
+              _tr('instructions'),
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontFamily: 'Raleway',

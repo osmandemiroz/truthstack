@@ -6,6 +6,7 @@ A fun and engaging mobile game app built with Flutter that displays social quest
 
 - **Beautiful Card Stack Interface**: Swipeable cards with smooth animations following Apple's Human Interface Guidelines
 - **40+ Social Questions**: Mix of fun, deep, and spicy questions to get conversations going
+- **🌍 Bilingual Support**: Full Turkish and English language support with translated questions
 - **Three Categories**: 
   - 🎉 **Fun** - Light-hearted and entertaining questions
   - 💜 **Deep** - Thoughtful questions that spark meaningful conversations  
@@ -13,6 +14,7 @@ A fun and engaging mobile game app built with Flutter that displays social quest
 - **Haptic Feedback**: Subtle vibrations enhance the user experience
 - **Progress Tracking**: See how many questions you've gone through
 - **Automatic Reshuffling**: Questions reshuffle when you reach the end
+- **Language Switching**: Easy language toggle with globe icon in the app bar
 
 ## Design Philosophy 🎨
 
@@ -51,11 +53,12 @@ The app follows Apple's Human Interface Guidelines with custom typography to del
 ## How to Play 🎮
 
 1. Open the app on your phone
-2. The top card shows a social question
-3. Read the question out loud to your group
-4. Everyone discusses or points to who fits the question best
-5. Swipe the card away or tap it to reveal the next question
-6. Use the undo button if you want to go back to a previous question
+2. **Choose your language**: Tap the globe icon in the top-right to switch between Turkish and English
+3. The top card shows a social question in your selected language
+4. Read the question out loud to your group
+5. Everyone discusses or points to who fits the question best
+6. Swipe the card away or tap it to reveal the next question
+7. Use the undo button if you want to go back to a previous question
 
 ## Project Structure 📁
 
@@ -73,18 +76,25 @@ truthstack/
 │       └── question_service.dart # Question loading service
 ├── assets/
 │   ├── questions/
-│   │   └── questions.json        # All game questions
-│   └── fonts/                    # SF Pro fonts (add if needed)
+│   │   ├── questions.json        # English questions
+│   │   └── questions_tr.json     # Turkish questions
+│   └── fonts/                    # Custom fonts
 └── pubspec.yaml                   # Flutter dependencies
 ```
 
 ## Customization 🛠
 
 ### Adding More Questions
-Edit `assets/questions/questions.json` to add your own questions. Each question needs:
+Edit the appropriate questions file to add your own questions:
+- **English**: `assets/questions/questions.json`
+- **Turkish**: `assets/questions/questions_tr.json`
+
+Each question needs:
 - `id`: Unique identifier
 - `text`: The question text
 - `category`: Either "fun", "deep", or "spicy"
+
+**Note**: If you add questions, make sure to add them to both language files to maintain consistency.
 
 ### Changing Colors
 The gradient colors for each category can be modified in `lib/widgets/question_card.dart` in the `_getGradientColors()` method.
@@ -96,6 +106,15 @@ The gradient colors for each category can be modified in `lib/widgets/question_c
 - **haptic_feedback**: For device vibration feedback
 - **Cupertino widgets**: For iOS-style UI components
 
+## Language Support 🌍
+
+The app supports two languages with full question translations:
+
+- **🇹🇷 Turkish (Türkçe)**: Default language with 40+ translated questions
+- **🇺🇸 English**: Complete English question set
+
+**Language Switching**: Tap the globe icon in the app bar to switch between languages. The questions will immediately update to your selected language.
+
 ## Notes 📝
 
 - The app uses custom fonts for an elegant, sophisticated look:
@@ -105,5 +124,6 @@ The gradient colors for each category can be modified in `lib/widgets/question_c
 - The app is optimized for portrait orientation
 - Questions are randomized and tracked to avoid immediate repeats
 - All fonts are included in the `assets/fonts/` directory
+- Language selection persists during the session and resets to Turkish on app restart
 
 Enjoy the game! 🎉
