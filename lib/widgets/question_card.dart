@@ -43,19 +43,23 @@ class _QuestionCardState extends State<QuestionCard>
     _scaleAnimation = Tween<double>(
       begin: 0.8,
       end: 1,
-    ).animate(CurvedAnimation(
-      parent: _animationController,
-      curve: Curves.elasticOut,
-    ));
+    ).animate(
+      CurvedAnimation(
+        parent: _animationController,
+        curve: Curves.elasticOut,
+      ),
+    );
 
     // Subtle rotation animation for depth
     _rotationAnimation = Tween<double>(
       begin: 0.02,
       end: 0,
-    ).animate(CurvedAnimation(
-      parent: _animationController,
-      curve: Curves.easeOutCubic,
-    ));
+    ).animate(
+      CurvedAnimation(
+        parent: _animationController,
+        curve: Curves.easeOutCubic,
+      ),
+    );
 
     // Start the entrance animation
     if (widget.isTopCard) {
@@ -187,11 +191,11 @@ class _QuestionCardState extends State<QuestionCard>
                                   AnimatedContainer(
                                     duration: const Duration(milliseconds: 300),
                                     transform: Matrix4.identity()
-                                      ..scaleByDouble(
-                                          _isPressed ? 0.8 : 1.0,
-                                          _isPressed ? 0.8 : 1.0,
-                                          _isPressed ? 0.8 : 1.0,
-                                          1),
+                                      ..scale(
+                                        _isPressed ? 0.8 : 1.0,
+                                        _isPressed ? 0.8 : 1.0,
+                                        _isPressed ? 0.8 : 1.0,
+                                      ),
                                     child: Icon(
                                       _getCategoryIcon(),
                                       size: 50,

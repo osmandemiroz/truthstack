@@ -122,17 +122,25 @@ class QuestionService {
   static List<Question> _getFallbackQuestions() {
     return [
       const Question(
-          id: 1,
-          text: 'Who would survive longest in a zombie apocalypse?',
-          category: 'fun'),
+        id: 1,
+        text: 'Who would survive longest in a zombie apocalypse?',
+        category: 'fun',
+      ),
       const Question(
-          id: 2, text: 'Who gives the best advice?', category: 'deep'),
+        id: 2,
+        text: 'Who gives the best advice?',
+        category: 'deep',
+      ),
       const Question(
-          id: 3, text: 'Who is most likely to become famous?', category: 'fun'),
+        id: 3,
+        text: 'Who is most likely to become famous?',
+        category: 'fun',
+      ),
       const Question(
-          id: 4,
-          text: 'Who would you trust with your biggest secret?',
-          category: 'deep'),
+        id: 4,
+        text: 'Who would you trust with your biggest secret?',
+        category: 'deep',
+      ),
       const Question(id: 5, text: 'Who has the best laugh?', category: 'fun'),
     ];
   }

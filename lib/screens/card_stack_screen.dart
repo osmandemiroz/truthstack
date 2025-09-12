@@ -52,10 +52,12 @@ class _CardStackScreenState extends State<CardStackScreen>
     _backgroundAnimation = Tween<double>(
       begin: 0,
       end: 1,
-    ).animate(CurvedAnimation(
-      parent: _backgroundAnimationController,
-      curve: Curves.easeInOut,
-    ));
+    ).animate(
+      CurvedAnimation(
+        parent: _backgroundAnimationController,
+        curve: Curves.easeInOut,
+      ),
+    );
 
     _loadQuestions();
   }
@@ -189,9 +191,11 @@ class _CardStackScreenState extends State<CardStackScreen>
     });
 
     // Set the question service language to match our UI language
-    await QuestionService.setLanguage(_currentLanguage == Language.turkish
-        ? QuestionLanguage.turkish
-        : QuestionLanguage.english);
+    await QuestionService.setLanguage(
+      _currentLanguage == Language.turkish
+          ? QuestionLanguage.turkish
+          : QuestionLanguage.english,
+    );
 
     // Get all questions and shuffle them
     final allQuestions = QuestionService.getAllQuestions();
