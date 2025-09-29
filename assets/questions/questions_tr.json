@@ -1,202 +1,202 @@
 {
     "questions": [{
             "id": 1,
-            "text": "Bu grupta, hiç tanımamış olmayı dilediğin kişi kim?",
+            "text": "Yokluğu bu grubu gizlice daha huzurlu yapacak kişi kim?",
             "category": "spicy"
         },
         {
             "id": 2,
-            "text": "Zombi kıyametinde en uzun süre hayatta kalacak kişi kim?",
-            "category": "fun"
+            "text": "Doğru bedelle sadakati şöhrete değişecek kişi kim?",
+            "category": "spicy"
         },
         {
             "id": 3,
-            "text": "En çok kim ünlü olacak?",
-            "category": "fun"
+            "text": "Sözünü bozup bunu en güzel şekilde savunacak kişi kim?",
+            "category": "spicy"
         },
         {
             "id": 4,
-            "text": "En derin sırrını kime güvenebilirsin?",
+            "text": "Bir arkadaşlığı bitirebilecek sırrı kime emanet edersin?",
             "category": "deep"
         },
         {
             "id": 5,
-            "text": "Bu grupta en kötü araba kullanan kim?",
+            "text": "Küçük sorunları güzel felaketlere dönüştüren kim?",
             "category": "fun"
         },
         {
             "id": 6,
-            "text": "Kavga anında yanında kimin olmasını istersin?",
-            "category": "fun"
+            "text": "Krizde kimin sakinliği şiir gibi—kiminki panik gibi gelir?",
+            "category": "deep"
         },
         {
             "id": 7,
-            "text": "En çok kim tutuklanacak?",
+            "text": "Köprüleri yakıp külünden sigara yakacak kişi kim?",
             "category": "spicy"
         },
         {
             "id": 8,
-            "text": "En iyi tavsiyeyi kim veriyor?",
+            "text": "Kimin tavsiyesi bilge duyulur ama en pahalıya patlar?",
             "category": "deep"
         },
         {
             "id": 9,
-            "text": "En çok kim flört ediyor?",
+            "text": "Kaosla flörtü sanat gibi yapan kim?",
             "category": "spicy"
         },
         {
             "id": 10,
-            "text": "Gece 3'te yardıma ihtiyacın olsa kimi ararsın?",
+            "text": "Gece 3'te kim açar—kim sadece kolayken döner?",
             "category": "deep"
         },
         {
             "id": 11,
-            "text": "En çok kim milyoner olacak?",
-            "category": "fun"
+            "text": "Kim önce zengin—ve daha önce yalnız kalır?",
+            "category": "spicy"
         },
         {
             "id": 12,
-            "text": "En iyi moda anlayışına sahip kim?",
-            "category": "fun"
+            "text": "Kimin tarzı baştan çıkarır—kimin özü hayal kırıklığıdır?",
+            "category": "spicy"
         },
         {
             "id": 13,
-            "text": "En kötü yalan söyleyen kim?",
-            "category": "fun"
-        },
-        {
-            "id": 14,
-            "text": "Issız bir adada kiminle mahsur kalmak istersin?",
+            "text": "En az yalan söyleyen ama en çok saklayan kim?",
             "category": "deep"
         },
         {
+            "id": 14,
+            "text": "Gemi battı: Kimi yanında tutar—kimi gözünün üzerinde tutarsın?",
+            "category": "fun"
+        },
+        {
             "id": 15,
-            "text": "En çok kim halka açık yerde kendini rezil edecek?",
+            "text": "Kimin hataları en gürültülü—kimininki en zarif?",
             "category": "fun"
         },
         {
             "id": 16,
-            "text": "İlk tanıştığından beri en çok değişen kim?",
+            "text": "Kim bu grubu aştı—kim büyümeyi reddediyor?",
             "category": "deep"
         },
         {
             "id": 17,
-            "text": "En büyük drama kraliçesi/kralı kim?",
+            "text": "Kim bir fısıltıyla savaş başlatır?",
             "category": "spicy"
         },
         {
             "id": 18,
-            "text": "En iyi ebeveyn olacak kim?",
+            "text": "Kim şefkatli ebeveyn—ve ürkütücü yargıç olur?",
             "category": "deep"
         },
         {
             "id": 19,
-            "text": "En çok kim Nobel Ödülü kazanacak?",
-            "category": "fun"
+            "text": "Kim hırsı sevgiyle karıştırır?",
+            "category": "deep"
         },
         {
             "id": 20,
-            "text": "En utanç verici arama geçmişine sahip kim?",
+            "text": "Kimin arama geçmişi odayı bir anda sessizleştirir?",
             "category": "spicy"
         },
         {
             "id": 21,
-            "text": "Bir günlüğüne kiminle hayat değişimi yapmak istersin?",
+            "text": "Hayat değişsen, kimin gölgelerinden en çok çekinirsin?",
             "category": "deep"
         },
         {
             "id": 22,
-            "text": "En kötü sır saklayan kim?",
-            "category": "spicy"
+            "text": "Kim başkalarını korumak için sır saklar—kim kendini?",
+            "category": "deep"
         },
         {
             "id": 23,
-            "text": "Herkesle kol güreşi yaparsa kim kazanır?",
+            "text": "Kim kavga kazanır—ama odayı kaybeder?",
             "category": "fun"
         },
         {
             "id": 24,
-            "text": "En güzel gülen kim?",
+            "text": "Kimin kahkahası seni yumuşatır—kimininki şüphelendirir?",
             "category": "fun"
         },
         {
             "id": 25,
-            "text": "Film izlerken en çok kim ağlayacak?",
-            "category": "fun"
-        },
-        {
-            "id": 26,
-            "text": "Düğününü planlamak için kime güvenebilirsin?",
+            "text": "Kim derinden hisseder—ve bunu güzelce sahneler?",
             "category": "deep"
         },
         {
+            "id": 26,
+            "text": "Geleceğini sana sormadan tasarlamasına kime güvenirsin?",
+            "category": "spicy"
+        },
+        {
             "id": 27,
-            "text": "En büyük erteleyici kim?",
-            "category": "fun"
+            "text": "Kim hayallerini erteler—ve suçu zamana atar?",
+            "category": "deep"
         },
         {
             "id": 28,
-            "text": "En garip yeme alışkanlıklarına sahip kim?",
+            "text": "Kimin tuhaflıkları birlikte yaşayana kadar sevimli?",
             "category": "fun"
         },
         {
             "id": 29,
-            "text": "En iyi seyahat arkadaşı kim olur?",
-            "category": "deep"
+            "text": "Uzun yolda kim rotayı çizer—kim hikâyeye dönüşür?",
+            "category": "fun"
         },
         {
             "id": 30,
-            "text": "En çok kim tarikat kurmaya başlayacak?",
+            "text": "Kim bir gülümsemeyle takipçi toplar—ve asla tarikat demez?",
             "category": "spicy"
         },
         {
             "id": 31,
-            "text": "En iyi sarılan kim?",
+            "text": "Kimin sarılması iyileştirir—kiminki verdiğinden fazlasını ister?",
             "category": "deep"
         },
         {
             "id": 32,
-            "text": "En çok kim TikTok yıldızı olacak?",
-            "category": "fun"
+            "text": "Kim sahneyi ister—ve ışığı açanı unutur?",
+            "category": "spicy"
         },
         {
             "id": 33,
-            "text": "Avukatın olarak kimi istersin?",
-            "category": "fun"
+            "text": "Suçlu olsan, burada kim seni kurtarabilir—ve kurtarır mı?",
+            "category": "deep"
         },
         {
             "id": 34,
-            "text": "En dağınık odası olan kim?",
-            "category": "fun"
+            "text": "Kim çevrimiçi güzel yaşar—ama odasında kötü?",
+            "category": "spicy"
         },
         {
             "id": 35,
-            "text": "En rekabetçi kim?",
-            "category": "fun"
+            "text": "Kim bağ kurmak için yarışır—kim seni kazanmak için?",
+            "category": "deep"
         },
         {
             "id": 36,
-            "text": "Telefonunu kilitsiz bırakabileceğin kim?",
+            "text": "Telefonunu hiç düşünmeden kime uzatabilirsin?",
             "category": "deep"
         },
         {
             "id": 37,
-            "text": "Deprem sırasında en çok kim uyuyacak?",
+            "text": "Kim fırtınada uyur—uyanıkken başlatır?",
             "category": "fun"
         },
         {
             "id": 38,
-            "text": "En iyi dans hareketlerine sahip kim?",
+            "text": "Kimin dansı saf neşe—kimininki saf performans?",
             "category": "fun"
         },
         {
             "id": 39,
-            "text": "En kötü oda arkadaşı kim olur?",
+            "text": "Kim oda arkadaşı olarak güzel bir felaket olur?",
             "category": "spicy"
         },
         {
             "id": 40,
-            "text": "Seni en çok kim ilham veriyor?",
+            "text": "Kim sana kim olduğunu hatırlatır—kim uzak durmanı?",
             "category": "deep"
         }
     ]

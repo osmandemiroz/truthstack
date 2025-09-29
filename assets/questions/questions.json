@@ -1,202 +1,202 @@
 {
     "questions": [{
             "id": 1,
-            "text": "In this group, who is the one you wish you had never met?",
+            "text": "Whose absence would secretly make this group calmer?",
             "category": "spicy"
         },
         {
             "id": 2,
-            "text": "Who here would survive the longest in a zombie apocalypse?",
-            "category": "fun"
+            "text": "Who here would trade loyalty for glory if the price was right?",
+            "category": "spicy"
         },
         {
             "id": 3,
-            "text": "Who is most likely to become famous?",
-            "category": "fun"
+            "text": "Who is most likely to betray a promise—and justify it beautifully?",
+            "category": "spicy"
         },
         {
             "id": 4,
-            "text": "Who would you trust with your deepest secret?",
+            "text": "Whom would you trust with a secret that could end a friendship?",
             "category": "deep"
         },
         {
             "id": 5,
-            "text": "Who is the worst driver in this group?",
+            "text": "Who turns small problems into beautiful disasters?",
             "category": "fun"
         },
         {
             "id": 6,
-            "text": "Who would you want by your side in a fight?",
-            "category": "fun"
+            "text": "In a crisis, whose calm would feel like poetry—and whose like panic?",
+            "category": "deep"
         },
         {
             "id": 7,
-            "text": "Who is most likely to get arrested?",
+            "text": "Who is most likely to burn a bridge, then light a cigarette with it?",
             "category": "spicy"
         },
         {
             "id": 8,
-            "text": "Who gives the best advice?",
+            "text": "Whose advice sounds wise—but costs you the most to follow?",
             "category": "deep"
         },
         {
             "id": 9,
-            "text": "Who is the biggest flirt?",
+            "text": "Who flirts with chaos like it’s an art form?",
             "category": "spicy"
         },
         {
             "id": 10,
-            "text": "Who would you call at 3 AM if you needed help?",
+            "text": "At 3 AM, who answers—and who only replies when it’s easy?",
             "category": "deep"
         },
         {
             "id": 11,
-            "text": "Who is most likely to become a millionaire?",
-            "category": "fun"
+            "text": "Who will be rich first—and loneliest sooner?",
+            "category": "spicy"
         },
         {
             "id": 12,
-            "text": "Who has the best fashion sense?",
-            "category": "fun"
+            "text": "Whose style seduces—and whose substance disappoints?",
+            "category": "spicy"
         },
         {
             "id": 13,
-            "text": "Who is the worst liar?",
-            "category": "fun"
-        },
-        {
-            "id": 14,
-            "text": "Who would you want to be stuck on a deserted island with?",
+            "text": "Who lies the least—but hides the most?",
             "category": "deep"
         },
         {
+            "id": 14,
+            "text": "Shipwrecked: who do you keep—and who do you keep an eye on?",
+            "category": "fun"
+        },
+        {
             "id": 15,
-            "text": "Who is most likely to embarrass themselves in public?",
+            "text": "Whose mistakes are loudest—and whose are prettiest?",
             "category": "fun"
         },
         {
             "id": 16,
-            "text": "Who has changed the most since you first met them?",
+            "text": "Who outgrew this group—and who refuses to grow at all?",
             "category": "deep"
         },
         {
             "id": 17,
-            "text": "Who is the biggest drama queen/king?",
+            "text": "Who can start a war with a whisper?",
             "category": "spicy"
         },
         {
             "id": 18,
-            "text": "Who would make the best parent?",
+            "text": "Who would make a tender parent—and a terrifying judge?",
             "category": "deep"
         },
         {
             "id": 19,
-            "text": "Who is most likely to win a Nobel Prize?",
-            "category": "fun"
+            "text": "Who confuses ambition with affection?",
+            "category": "deep"
         },
         {
             "id": 20,
-            "text": "Who has the most embarrassing search history?",
+            "text": "Whose search history would turn the room silent?",
             "category": "spicy"
         },
         {
             "id": 21,
-            "text": "Who would you swap lives with for a day?",
+            "text": "If you had to swap lives, whose shadows would you fear most?",
             "category": "deep"
         },
         {
             "id": 22,
-            "text": "Who is the worst at keeping secrets?",
-            "category": "spicy"
+            "text": "Who keeps secrets to protect others—and who to protect themselves?",
+            "category": "deep"
         },
         {
             "id": 23,
-            "text": "Who would win in an arm wrestling match against everyone else?",
+            "text": "Who wins the fight—and loses the room?",
             "category": "fun"
         },
         {
             "id": 24,
-            "text": "Who has the best laugh?",
+            "text": "Whose laugh makes you softer—and whose makes you suspicious?",
             "category": "fun"
         },
         {
             "id": 25,
-            "text": "Who is most likely to cry during a movie?",
-            "category": "fun"
-        },
-        {
-            "id": 26,
-            "text": "Who would you trust to plan your wedding?",
+            "text": "Who feels deeply—and performs it beautifully?",
             "category": "deep"
         },
         {
+            "id": 26,
+            "text": "Whom would you trust to design your future—without asking you?",
+            "category": "spicy"
+        },
+        {
             "id": 27,
-            "text": "Who is the biggest procrastinator?",
-            "category": "fun"
+            "text": "Who delays dreams—and blames timing?",
+            "category": "deep"
         },
         {
             "id": 28,
-            "text": "Who has the weirdest eating habits?",
+            "text": "Whose quirks are charming—until you live with them?",
             "category": "fun"
         },
         {
             "id": 29,
-            "text": "Who would be the best travel companion?",
-            "category": "deep"
+            "text": "Cross-country: who plans the route—and who becomes the story?",
+            "category": "fun"
         },
         {
             "id": 30,
-            "text": "Who is most likely to start a cult?",
+            "text": "Who could gather followers with a smile—and never call it a cult?",
             "category": "spicy"
         },
         {
             "id": 31,
-            "text": "Who gives the best hugs?",
+            "text": "Whose hug heals—and whose asks for more than they give?",
             "category": "deep"
         },
         {
             "id": 32,
-            "text": "Who is most likely to become a TikTok star?",
-            "category": "fun"
+            "text": "Who wants the spotlight—and forgets who turned it on?",
+            "category": "spicy"
         },
         {
             "id": 33,
-            "text": "Who would you want as your lawyer?",
-            "category": "fun"
+            "text": "If you were guilty, who here could save you—and would they?",
+            "category": "deep"
         },
         {
             "id": 34,
-            "text": "Who has the messiest room?",
-            "category": "fun"
+            "text": "Who lives beautifully online—and badly in their room?",
+            "category": "spicy"
         },
         {
             "id": 35,
-            "text": "Who is the most competitive?",
-            "category": "fun"
+            "text": "Who competes to connect—and who competes to win you?",
+            "category": "deep"
         },
         {
             "id": 36,
-            "text": "Who would you trust with your phone unlocked?",
+            "text": "Phone unlocked: who do you hand it to without a second thought?",
             "category": "deep"
         },
         {
             "id": 37,
-            "text": "Who is most likely to sleep through an earthquake?",
+            "text": "Who sleeps through storms—and starts them awake?",
             "category": "fun"
         },
         {
             "id": 38,
-            "text": "Who has the best dance moves?",
+            "text": "Whose dancing is pure joy—and whose is pure performance?",
             "category": "fun"
         },
         {
             "id": 39,
-            "text": "Who would make the worst roommate?",
+            "text": "Who would be a beautiful disaster as a roommate?",
             "category": "spicy"
         },
         {
             "id": 40,
-            "text": "Who inspires you the most?",
+            "text": "Who reminds you who you are—and who reminds you who to avoid?",
             "category": "deep"
         }
     ]
